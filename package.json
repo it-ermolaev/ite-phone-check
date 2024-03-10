@@ -1,34 +1,37 @@
 {
-  "author": "Sergei Ermolaev <it.ermolaev@gmail.com> (https://github.com/it-ermolaev)",
+  "name": "ite-phone-check",
+  "version": "0.0.0",
+  "description": "Library for validation of phone numbers in accordance with ITU standard E.164",
+  "homepage": "https://github.com/it-ermolaev/ite-phone-check",
   "bugs": {
     "url": "https://github.com/it-ermolaev/ite-phone-check/issues"
   },
-  "description": "Library for validation of phone numbers in accordance with ITU standard E.164",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/it-ermolaev/ite-phone-check"
+  },
+  "license": "MIT",
+  "author": "Sergei Ermolaev <it.ermolaev@gmail.com> (https://github.com/it-ermolaev)",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "pre-commit": "lint-staged",
+    "preview": "vite preview"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "typescript": "^5.0.3",
     "vite": "^5.1.4"
   },
-  "homepage": "https://github.com/it-ermolaev/ite-phone-check",
-  "license": "MIT",
-  "name": "ite-phone-check",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/it-ermolaev/ite-phone-check"
-  },
-  "scripts": {
-    "build": "tsc && vite build",
-    "dev": "vite",
-    "preview": "vite preview",
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix"
-  },
-  "title": "IT-E Phone Check",
-  "type": "module",
-  "version": "0.0.0"
+  "title": "IT-E Phone Check"
 }
