@@ -1,5 +1,5 @@
 {
   "package.json": "npx -y sort-package-json",
   "src/**/*.ts": "npm run lint",
-  "**/*.*rc": "prettier --write"
+  "**/*.*rc": "prettier --parser=json --write"
 }
